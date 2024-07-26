@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "./;pb";
+
+message KS{
+    string Name = 1;
+}
+
+service HelloKS{
+    rpc Welcome(KS) returns (KS);
+}
