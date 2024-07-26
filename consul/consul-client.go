@@ -41,7 +41,7 @@ func main() {
 	// 以下为 grpc 服务远程调用 ======================================================
 	//conn, err := grpc.Dial(":8080", grpc.WithTransportCredentials(insecure.NewCredentials()))
 	// 换为使用 consul 获取到的 addr
-	conn, err := grpc.Dial(addr, grpc.WithTransportCredentials(insecure.NewCredentials()))
+	conn, err := grpc.NewClient(addr, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		log.Fatal("grpc.Dial() err =", err)
 	}

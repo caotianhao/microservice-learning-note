@@ -12,7 +12,7 @@ import (
 func main() {
 	// 1. 连接 grpc 服务
 	// 后面的参数是为了保证安全性，不加有时候会报错
-	grpcConn, err := grpc.Dial(":8080", grpc.WithTransportCredentials(insecure.NewCredentials()))
+	grpcConn, err := grpc.NewClient(":8080", grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		log.Fatal("grpc.Dial err =", err)
 	}

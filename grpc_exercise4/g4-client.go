@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// 1
-	conn, _ := grpc.Dial(":8080", grpc.WithTransportCredentials(insecure.NewCredentials()))
+	conn, _ := grpc.NewClient(":8080", grpc.WithTransportCredentials(insecure.NewCredentials()))
 	defer func(conn *grpc.ClientConn) {
 		_ = conn.Close()
 	}(conn)
