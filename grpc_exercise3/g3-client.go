@@ -4,6 +4,7 @@ import (
 	"Microservice/grpc_exercise3/g3test"
 	"context"
 	"fmt"
+
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

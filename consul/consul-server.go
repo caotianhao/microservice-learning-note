@@ -3,10 +3,11 @@ package main
 import (
 	"Microservice/consul/pb"
 	"context"
-	"github.com/hashicorp/consul/api"
-	"google.golang.org/grpc"
 	"log"
 	"net"
+
+	"github.com/hashicorp/consul/api"
+	"google.golang.org/grpc"
 )
 
 type Teacher struct {

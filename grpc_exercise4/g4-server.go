@@ -3,8 +3,9 @@ package main
 import (
 	"Microservice/grpc_exercise4/g4"
 	"context"
-	"google.golang.org/grpc"
 	"net"
+
+	"google.golang.org/grpc"
 )
 
 type BBB struct {

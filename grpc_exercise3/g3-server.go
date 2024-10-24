@@ -3,8 +3,9 @@ package main
 import (
 	"Microservice/grpc_exercise3/g3test"
 	"context"
-	"google.golang.org/grpc"
 	"net"
+
+	"google.golang.org/grpc"
 )
 
 type AAA struct {

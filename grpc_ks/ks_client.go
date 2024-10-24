@@ -4,9 +4,10 @@ import (
 	"Microservice/grpc_ks/pb"
 	"context"
 	"fmt"
+	"log"
+
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	"log"
 )
 
 func main() {

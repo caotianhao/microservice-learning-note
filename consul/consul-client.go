@@ -4,11 +4,12 @@ import (
 	"Microservice/consul/pb"
 	"context"
 	"fmt"
+	"log"
+	"strconv"
+
 	"github.com/hashicorp/consul/api"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	"log"
-	"strconv"
 )
 
 func main() {

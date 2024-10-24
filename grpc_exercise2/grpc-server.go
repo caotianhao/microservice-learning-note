@@ -3,9 +3,10 @@ package main
 import (
 	"Microservice/grpc_exercise2/pe"
 	"context"
-	"google.golang.org/grpc"
 	"log"
 	"net"
+
+	"google.golang.org/grpc"
 )
 
 type CityStruct struct {

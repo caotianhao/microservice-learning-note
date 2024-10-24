@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/hashicorp/consul/api"
 	"log"
+
+	"github.com/hashicorp/consul/api"
 )
 
 func main() {
